@@ -16,9 +16,7 @@ import java.util.Objects;
  */
 @Entity
 @Table(name = "studcourses")
-public class StudCourses
-    extends Auditable
-    implements Serializable
+public class StudCourses extends Auditable implements Serializable
 {
     /**
      * Foreign key into the course table

@@ -149,7 +149,6 @@ public class Course
     public void addStudent(
         Student student)
     {
-        students.add(new StudCourses(this,
-            student));
+        students.add(new StudCourses(this, student));
     }
 }

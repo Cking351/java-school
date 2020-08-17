@@ -10,8 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 /**
  * The CRUD repository connecting Courses to the rest of the application
  */
-public interface CourseRepository
-    extends CrudRepository<Course, Long>
+public interface CourseRepository extends CrudRepository<Course, Long>
 {
     /**
      * Counts the number of student course combinations for the given studentid and courseid. Answer should be only 0 or 1.
