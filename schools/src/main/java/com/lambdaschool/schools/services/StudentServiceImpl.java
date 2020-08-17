@@ -1,5 +1,6 @@
 package com.lambdaschool.schools.services;
 
+import com.lambdaschool.schools.exceptions.ResourceNotFoundException;
 import com.lambdaschool.schools.models.Course;
 import com.lambdaschool.schools.models.StudCourses;
 import com.lambdaschool.schools.models.Student;
@@ -49,7 +50,7 @@ public class StudentServiceImpl
     public Student findStudentById(long id)
     {
         return studentrepos.findById(id)
-            .orElseThrow(() -> new EntityNotFoundException("Student id " + id + " not found!"));
+            .orElseThrow(() -> new ResourceNotFoundException("Student id " + id + " not found!"));
     }
 
     @Transactional

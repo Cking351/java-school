@@ -18,12 +18,8 @@ import java.util.List;
  */
 @Entity
 @Table(name = "students")
-public class Student
-    extends Auditable
-{
-    /**
-     * The primary key (long) of the students table
-     */
+public class Student extends Auditable {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long studentid;
